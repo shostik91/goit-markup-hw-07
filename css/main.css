@@ -207,8 +207,8 @@ header .conteiner {
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid var(--color-black);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/hero.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -854,7 +854,7 @@ textarea::placeholder {
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
-  background-image: url(./img/iconcheck.svg);
+  background-image: url("../img/iconcheck.svg");
   background-origin: border-box;
 }
 
