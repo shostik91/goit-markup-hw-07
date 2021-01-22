@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
     width: 528px;
     height: 581px;
     padding: 40px;
@@ -32,7 +32,7 @@
 }
 .modal-buttom {
     position: absolute;
-    fill: var(--color2, #000);
+    fill: $color-blue, #000;
     top: 8px;
     right: 8px;
 }
@@ -59,7 +59,7 @@
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: var(--primary-text-color);
+    color: $color-black;
     margin-bottom: 12px;
 }
 label {
@@ -68,7 +68,7 @@ label {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--secondary-text-color);
+    color: $color-gray;
     }
 input {
     width: 448px;
@@ -84,46 +84,48 @@ input {
     letter-spacing: 0.01em;
     outline: none;
     padding-left: 45px;
+    &:focus {
+        border: 1px solid $accent-color;
     }
-.input:focus {
-    border: 1px solid var(--accent-color);
-}
-.input:hover {
-    border: 1px solid var(--accent-color);
-}
+    &:hover {
+        border: 1px solid $accent-color;
+    }
+    }
+
 .modal-icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    fill: var(--primary-text-color);
+    fill: $color-black;
 }
 .input:focus ~ .modal-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 .input:hover ~ .modal-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 textarea {
     resize: none;
     height: 120px;
     padding: 12px 16px;
-    border: 1px solid var(--input-border-color);
+    border: 1px solid $input-border-color;
     border-radius: 4px;
     outline: none;
+    &:focus {
+        border: 1px solid $accent-color;
+    }
+    &:hover {
+        border: 1px solid $accent-color;
+    }
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $color-gray;
+    }
 }
-textarea:focus {
-    border: 1px solid var(--accent-color);
-}
-textarea:hover {
-    border: 1px solid var(--accent-color);
-}
-textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--form-text-color);
-}
+
 .checkbox-field {
     margin-bottom: 30px;
     display: flex;
@@ -139,7 +141,7 @@ textarea::placeholder {
     text-decoration: underline;
 }
 .label-rules a:visited {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: underline;
 }
 .checkbox {
@@ -155,13 +157,13 @@ textarea::placeholder {
 .icon-checkbox {
     width: 16px;
     height: 15px;
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid $primary-text-color;
     border-radius: 2px;
     margin-right: 7px;
 }
 .checkbox:checked + .icon-checkbox {
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
     background-image: url("../img/iconcheck.svg");
     background-origin: border-box;
 }
@@ -171,7 +173,7 @@ textarea::placeholder {
     width: 200px;
     height: 50px;
     padding: 10px 55px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -179,13 +181,12 @@ textarea::placeholder {
     line-height: 1.87;
     font-weight: 700;
     letter-spacing: 0.06em;
-    color: var(--color-wight);
-    transition: background-color 250ms var(--timing-function);
+    color: $color-wight;
+    transition: background-color 250ms $timing-function;
+    &:hover {
+        background-color: #188ce8;
+    }
 }
-.btn-submit:hover {
-    background-color: #188ce8;
-}
-
 .modal-buttom:hover {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }

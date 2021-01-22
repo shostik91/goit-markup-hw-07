@@ -18,7 +18,7 @@
         margin-right: 30px;
     }
     .worker {
-        background:var(--color-wight);
+        background:$color-wight;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
@@ -49,20 +49,20 @@
         height: 44px;
         box-sizing: border-box;
         border-radius: 50%;
-        background-color: var(--color-wight);
+        background-color: $color-wight;
     
     }
     .masanger-link:hover {
         background-color: #2196F3;
         opacity: 1;
-        transition: opacity 250ms var(--timing-function);
+        transition: opacity 250ms $timing-function;
     }
     .mesanger-icon {
         fill: #AFB1B8;
         margin: auto;
     }
     .mesanger-icon:hover {
-        fill: var(--color-wight);
+        fill: $color-wight;
         opacity: 1;
-        transition: opacity 250ms var(--timing-function);
+        transition: opacity 250ms $timing-function;
     }

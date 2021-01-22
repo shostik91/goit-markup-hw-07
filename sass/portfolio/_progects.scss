@@ -6,7 +6,7 @@
     line-height: 36px;
     letter-spacing: 0.06em;
     white-space: nowrap;
-    color: var(--color-black);
+    color: $color-black;
 }
 
 .progect-what {
@@ -31,11 +31,11 @@
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-
-}
-.progect-list-li:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: opacity 250ms var(--timing-function);
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: opacity 250ms $timing-function;
+    }
+    
 }
 
 .progect-list h3 {
@@ -68,14 +68,14 @@
     height: 100%;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-wight);
+    color: $color-wight;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     
 }
 .overlay:hover .overlay-p {
     transform: translateY(0);
-    transition: 250ms var(--timing-function);
+    transition: 250ms $timing-function;
 }
 .corona {
     position: absolute;
